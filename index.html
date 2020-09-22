@@ -1,247 +1,300 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-	<title>CampDODO.com</title>
-	<link rel="shortcut icon" type="image/png" href="image/travel.png">
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Citation</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.csss">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="design.css">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="style.css">
+</head>
 
-	
-  </head>
-	<body>
 
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="#"><img src="image/travel.png">CampDODO.com</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-			  <ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-				  <a class="nav-link" href="#">Home </a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="#services">Services</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="#about-us">About Us</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#testimonals">highlights</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact-us">Contact Us</a>
-				</li>	
-			  </ul>
-			</div>
-		  </nav>
+<body >
+	<header>
 
-		
-		<section id="home">			
-			<div class="jumbotron jumbotron-fluid">
-				  <div class="container">
-					  <h1 class="display-3">WELCOME TO CAMP DODO</h1>
-					  <p class="lead">NYAKIS</p>  
-				  </div>
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FF3300;">
+			  <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 20px"> <img src="icon/CalambaSeal.png" style="width: 50px; height: 50px;"> P.O.S.O</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse m-2 pb-1" id="navbarSupportedContent">
+
+			    <ul class="nav navbar-nav" style="align-items: center;">
+			     
+			      <li class="nav-item active">
+			        <a class="nav-link" href="officer1.php">Traffic Citation</a>
+			      </li>
+			      <li class="nav-item">
+			      	<a class="nav-link" href="officer2.php">Ordinance Citation</a>
+			      </li>
+			      <li class="nav-item">
+			      	<form action="logout.php" method="POST" class="form-inline my-2 my-lg-0">
+			      <button type="endsession" name="logout_btn" id="navbutton" class="btn" style="color: white; font-weight: bold;">Logout</button>
+			    </form>
+			      </li>
+			      
+			    </ul>			   
+			  </div>
+			</nav>
 				
-			</div>  
-		</section>
+	</header>
 
-		<section id="services">
-			<div class="container text-center">
-				<div class="row m-5 text-center" id="servicecontainer">
-					<h1 class="mx-auto d-block" id="servicetitle">Services</h1>
-					<p id="serviceinfo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit esse non minus libero aperiam ullam consequuntur placeat, voluptatem, consectetur inventore atque aspernatur, sint eligendi iusto exercitationem nam nulla dicta maiores.</p>
-				</div>
-				<div class="row">
-					<div class="col-md">
-						<div class="card card-transition mt-5">
-							<div class="card-body">
-								<img src="image/camping.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
-								<h3>MEMA</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse ut eius excepturi et labore enim porro aspernatur iusto quae. Tenetur, tempore corporis nobis doloribus earum laboriosam commodi aut soluta.</p>							
-							</div>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="card card-transition mt-5">
-							<div class="card-body">
-								<img src="image/mountain.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
-								<h3>MEMA</h3>
-								
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse ut eius excepturi et labore enim porro aspernatur iusto quae. Tenetur, tempore corporis nobis doloribus earum laboriosam commodi aut soluta.</p>							
-							</div>
-						</div>
-					</div>
-					<div class="col-md">
-						<div class="card card-transition mt-5">
-							<div class="card-body">
-								<img src="image/lantern.png" alt="" class="img-fluid rounded-circle w-50 mb-3">
-								<h3>MEMA</h3>
-								
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse ut eius excepturi et labore enim porro aspernatur iusto quae. Tenetur, tempore corporis nobis doloribus earum laboriosam commodi aut soluta.</p>							
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<section id="about-us">
-			<div class="container mt-5">
-				<div class="row" id="about-usrow">
-					<div class="col">
-						<h1>About-Us</h1>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure porro tenetur iste! Ad doloribus cum ex dolorum quaerat, natus veniam, sapiente sint omnis impedit autem nam minima eum dicta amet?</p>
-					</div>
-				</div>
-			</div>
-			<div class="container mt-5">
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-					  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
-					  <div class="carousel-item active">
-						<img class="d-block w-100" src="image/about1.jpg" alt="First slide">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>...</h5>
-							<p>...</p>
-						  </div>
-					  </div>
-					  <div class="carousel-item">
-						<img class="d-block w-100" src="image/about2.jpg" alt="Second slide">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>...</h5>
-							<p>...</p>
-						  </div>
-					  </div>
-					  <div class="carousel-item">
-						<img class="d-block w-100" src="image/about3.jpg" alt="Third slide">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>...</h5>
-							<p>...</p>
-						  </div>
-					  </div>
-					</div>
-					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					  <span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					  <span class="sr-only">Next</span>
-					</a>
+	<div class="container-fluid">
+
+		<div class="row m-3">
+
+			<div class="col-sm-4 p-1">
+
+				<div class="card">
+				  <h5 class="card-header" style="font-weight: bold;">Traffic Citation</h5>
+				  <div class="card-body">
+				  
+				 	<div class="container-fluid p-1">
+				 		 <form action="function4.php" method="POST">
+				 		<div class="row" style="font-weight: bold;">
+				 			<div class="col-sm-3">
+				 				<label>Ticket Number</label>
+				 				<input type="text" name="Ticketnumber" class="form-control" required>
+				 			</div>
+
+				 			<div class="col-sm-4">
+				 				 <label>Date Apprehended</label>
+         						 <input type="text" name="apprehended" class="form-control" placeholder="" required>
+				 			</div>
+
+				 			<div class="col-sm-5">
+				 				 <label>License Number</label>
+         							 <input type="text" name="license" class="form-control" placeholder="" required>
+				 			</div>
+				 		</div>
+
+				 		<div class="row pt-1" style="font-weight: bold;">
+				 			<div class="col-sm">
+				 				<label>Firstname</label>
+         						 <input type="text" name="fname" class="form-control" placeholder="">
+				 			</div>	
+				 		</div>
+
+				 		<div class="row pt-1" style="font-weight: bold;">
+				 			<div class="col-sm">
+				 				<label>Lastname</label>
+         						 <input type="text" name="lname" class="form-control" placeholder="">
+				 			</div>
+				 			
+				 		</div>
+
+				 		<div class="row pt-1" style="font-weight: bold;">
+				 			<div class="col-sm">
+				 				<label>Middlename</label>
+        						  <input type="text" name="mname" class="form-control" placeholder="">
+				 			</div>
+				 			
+				 		</div>
+
+				 		<div class="row pt-1" style="font-weight: bold;">
+
+				 			<div class="col-sm-3">
+				 				 <label>Gender</label>
+						            <select  name="gender" class="form-control">
+						               <option selected></option>
+						                 <option>Male</option>
+						                 <option>Female</option>
+						            </select>
+				 			</div>
+
+				 			<div class="col-sm-4">
+				 				<label>Birthdate</label>
+          						<input type="text" name="bday"  class="form-control" placeholder="">
+				 			</div>
+
+				 			<div class="col-sm-5">
+				 				 <label>Phone Number</label>
+          							<input type="text" name="contact" class="form-control" placeholder="">
+				 			</div>
+				 			
+				 		</div>
+
+				 		<div class="row pt-1" style="font-weight: bold;">
+				 			
+				 			<div class="col-sm-4">
+				 				<label>Confiscated item</label>
+						           <select  name="item" class="form-control">
+						               <option selected>none</option>
+						                 <option>License</option>
+						                 <option>Registration</option>
+						            </select>
+				 			</div>
+
+				 			<div class="col-sm-4">
+				 				 <label>Vehicle plate</label>
+         						 <input type="text" name="plate" class="form-control" placeholder="">
+				 			</div>
+
+				 			<div class="col-sm-4">
+				 				<label>Vehicle Type</label>
+        						  <input type="text" name="vehicletype" class="form-control" placeholder="">
+				 			</div>
+				 		</div>
+
+				 		<div class="row pt-1" style="font-weight: bold;">
+				 			<div class="col-sm">
+				 				<label>Officer</label>
+         						 <input type="text" name="officer" class="form-control" placeholder="">
+				 			</div>
+				 		</div>
+
+				 		<div class="row pt-1" style="font-weight: bold;">
+				 			<div class="col-sm">
+				 				 <label>Violation</label>
+						          <select  name="Violation" class="form-control">
+						               <option selected>others</option>
+						                 <option>Truckban</option>
+						                 <option>Stalled Vehicle</option>
+						                 <option>Illegal Parking</option>
+						                 <option>Construction</option>
+						                 <option>Abandonment of motor vehicle</option>
+						                 <option>Disregarding Traffic Light sign</option>
+						                 <option>OverSpeeding</option>
+						                 <option>Reckless Driving</option>
+						                 <option>Driving While Under the Influence</option>
+						                 <option>Driving with Invalid/Deliquent</option>
+						                 <option>Unregistered Motor Vehicle Plate</option>
+						                 <option>Delinquentan Valid Suspended Registration</option>
+						                 <option>Invalid Or No Franchise</option>
+						                 <option>Operating Out of Line</option>
+						                 <option>Trip Cutting</option>
+						                 <option>Overloading</option>
+						                 <option>Loading/Unloading in Prohibited area</option>
+						                 <option>Refusal To Convey Passengers</option>
+						            </select>
+				 			</div>
+
+				 			
+				 			
+				 		</div>
+				 		
+				 	</div>
+
 				  </div>
+				  <div class="card-footer">
+				  	<button type="submit" name="insert" class="btn" style="float: right; color: white; font-weight: bold; background-color: #FF3300;">Save Record</button>
+				  </div>
+				  </form>
+				</div>
 			</div>
+
 		</div>
-
-		</section>
-
-		<section id="testimonals">
-			<div class="container mt-5">
-				<div class="row  text-center m-5">
-					<div class="col m-2" id="highlightcontent">
-						<h1 >Our Highlights</h1>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quos ipsam dolorem dolor. Nemo accusamus voluptatum impedit optio ducimus dolorem perspiciatis porro enim qui delectus? Consequuntur possimus aliquam qui dolores?</p>
-					</div>
-				</div>
-				<div class="row m-1">
-						<!-- Swiper -->
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="image/camp1.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="image/camp2.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="image/camp3.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="image/camp4.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="image/camp5.jpg" alt=""></div>						
-						</div>
-						<!-- Add Pagination -->
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-			</div>
-			
-		</section>
-
 		
-		<section id="contact-us">
-			<footer>
-				<div class="container tex-left">
-					<div class="row">
-						<div class="col -md m-1">
-							<h1>CAMPDODO</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum quibusdam accusamus perferendis ducimus error eos modi fuga dolore odio consectetur, quia similique dolor nulla ad officia omnis repellat neque.</p>
-						</div>
-						<div class="col-md m-1">
-							<h2>Contact Us</h2>
-							<ul>
-								<li>Loremipsum@gmail.com</li>
-								<li>loermipsum2@gmail.com</li>
-								<li>091122334455</li>
-								<li>5125-2134-21</li>
-							</ul>
-						</div>
-						<div class="col-md m-1">
-							<h2>Visit Us</h2>
-							<P>123 sesame street <br>
-								loremipsum is not this <br>
-								123-41 Driveway
-							</P>
-						</div>
-					</div>
-				</div>
-			</footer>
-		
-		</section>
+	</div>
 
 
-	
-	
+
+	<!--start view modal-->
+<div class="modal fade" id="view">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-primary">
+          <h4 class="modal-title" style="font-weight: bold; color: white">Order of Payment</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <form action="function4.php" method="POST">
+        <div class="modal-body">
+          <div class="container-fluid  "style="font-weight: bold">
+
+          <div class="col">
+
+      <input type="hidden" name="id" id="id">
+
+        <div class="col">
+          <label>Ticket Number</label>
+          <input type="text" name="Ticketnumber" id="Ticketnumber" class="form-control" placeholder="" readonly>
+        </div>
+
+        <div class="col pt-2">
+          <label>Violators Name</label>
+          <input type="text" name="fname" id="fname" class="form-control" placeholder="" readonly>
+        </div>
+
+        <div class="col pt-2">
+          <label>Phone Number</label>
+          <input type="text" name="contact" id="contact" class="form-control" placeholder="" readonly>
+        </div>
+            
+
+         <div class="col pt-2">
+          <label>Violation & offense</label>
+          <input type="text" name="violation" id="violation" class="form-control" placeholder="" readonly>
+        </div>
+
+        <div class="col pt-2">
+          <label>Amount</label>
+          <input type="text" id="amount" name="amount" class="form-control" placeholder="">
+        </div>
+
+          </div>
+        </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+
+          <button type="submit" name="updatetct" class="btn btn-primary">Send Order of Payment</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
-	  
-	
-<!----- smoothe scroll ------>
-	<script src="smooth-scroll.js"></script>
-	<script>
-		var scroll = new SmoothScroll('a[href*="#"]');
-	</script>
-	
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script>
-		var swiper = new Swiper('.swiper-container', {
-		  effect: 'coverflow',
-		  grabCursor: true,
-		  centeredSlides: true,
-		  slidesPerView: 'auto',
-		  coverflowEffect: {
-			rotate: 20,
-			stretch: 0,
-			depth: 100,
-			modifier: 1,
-			slideShadows: true,
-		  },
-		  pagination: {
-			el: '.swiper-pagination',
-		  },
-		  autoplay: {
-			delay: 500,
-			disableOnInteraction: true,
-		},
-			loop: true,
-		});
-	  </script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<!--End view modal-->
+
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	 	 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+
+
+	  	<!--retrieve data to modal-->
+<script>
+  
+$(document).ready(function(){
+
+  $('.view').on('click',function(){
+    $('#view').modal('show');
+
+    $tr = $(this).closest('tr');
+
+    var data = $tr.children("td").map(function(){
+      return $(this).text();
+    }).get();
+
+    console.log(data);
+
+    $('#id').val(data[0]);
+    $('#Ticketnumber').val(data[1]);
+    $('#fname').val(data[2]);
+    $('#contact').val(data[3]);
+    $('#violation').val(data[4]);
+   
+
+
+  });
+});
+
+</script>
+
+</body>
 </html>
